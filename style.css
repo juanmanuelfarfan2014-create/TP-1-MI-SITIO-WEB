@@ -85,36 +85,6 @@ nav {
     padding: 2rem;
     color: #333;
 }
-#contacto {
-    
-    padding: 4rem 2rem;
-}
-
-#contacto h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-form {
-max-width: 600px;
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-gap: 1rem;
-
-}
-
-imput, textarea {
-    padding: .8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-
-}
-
-textarea {
-    height: 150px;
-    resize: vertical;
-}
 
 
 #libertadores h1 {
@@ -135,4 +105,108 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+form {
+    max-width: 450px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+}
+
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc; 
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+
+
+
+input:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
+    border-color: #2ecc71;
+    background-color: #fafffa;
+}
+
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+    border-color: #e74c3c;
+    background-color: #fffafa;
+}
+
+
+.campo-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.campo-checkbox input {
+    width: auto; 
+    margin: 0;
+}
+
+.label-inline {
+    display: inline !important; 
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
 }
